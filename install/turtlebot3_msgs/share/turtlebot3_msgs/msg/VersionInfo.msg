@@ -1,0 +1,1 @@
+/home/patrick/turtlebot3_ENAE450_ws/src/turtlebot3_msgs/msg/VersionInfo.msg

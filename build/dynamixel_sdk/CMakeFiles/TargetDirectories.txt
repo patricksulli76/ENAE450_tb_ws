@@ -1,0 +1,12 @@
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/ament_cmake_python_symlink_dynamixel_sdk.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/ament_cmake_python_build_dynamixel_sdk_egg.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/test.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/edit_cache.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/rebuild_cache.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/list_install_components.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/install.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/install/local.dir
+/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/CMakeFiles/install/strip.dir
