@@ -1,0 +1,17 @@
+[1.290s] Invoking command in '/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller': PYTHONPATH=/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/patrick/turtlebot3_ENAE450_ws/install/turtlebot3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller/build --no-deps symlink_data
+[1.686s] running develop
+[1.945s] running egg_info
+[1.946s] writing turtlebot3_controller.egg-info/PKG-INFO
+[1.947s] writing dependency_links to turtlebot3_controller.egg-info/dependency_links.txt
+[1.947s] writing entry points to turtlebot3_controller.egg-info/entry_points.txt
+[1.947s] writing requirements to turtlebot3_controller.egg-info/requires.txt
+[1.948s] writing top-level names to turtlebot3_controller.egg-info/top_level.txt
+[1.948s] reading manifest file 'turtlebot3_controller.egg-info/SOURCES.txt'
+[1.951s] writing manifest file 'turtlebot3_controller.egg-info/SOURCES.txt'
+[1.952s] running build_ext
+[1.954s] Creating /home/patrick/turtlebot3_ENAE450_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3-controller.egg-link (link to .)
+[1.955s] Installing drive_forward script to /home/patrick/turtlebot3_ENAE450_ws/install/turtlebot3_controller/lib/turtlebot3_controller
+[1.955s] 
+[1.955s] Installed /home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller
+[1.955s] running symlink_data
+[2.015s] Invoked command in '/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller' returned '0': PYTHONPATH=/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/patrick/turtlebot3_ENAE450_ws/install/turtlebot3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_controller/build --no-deps symlink_data
