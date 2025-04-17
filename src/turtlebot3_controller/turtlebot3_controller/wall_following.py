@@ -12,7 +12,7 @@ class DrivingNode(Node):
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         timer_period = 0.5  # seconds
         self.subscriber = self.create_subscription(LaserScan,'scan',self.listener_callback,10)
-        self.following_right = False
+        self.following_right = True
         self.following_left = False
         self.turning_right = False
         self.turning_left = False
@@ -105,8 +105,8 @@ class DrivingNode(Node):
     
     def check_wall_all(self, msg, distance):
         range = msg.ranges[0:720]
-        min = min(range)
-        if (min < distance):
+        minimum = min(range)
+        if (minimum < distance):
             return True
         else:
             return False
@@ -150,8 +150,8 @@ class DrivingNode(Node):
         if self.following_right:
             print("Following right")
             if(self.check_wall_all(msg, self.crit_distance)):
-                self.movement_msg = self.move_backward()
-                self.movement_msg.angular.z = self.turn_speed
+                movement_msg = self.move_backward()
+                movement_msg.angular.z = self.turn_speed
             elif (self.check_wall_on_right and not self.check_wall_in_front(msg, self.distance)):
                 movement_msg = self.move_forward()
                 print("DRIVING")
@@ -176,7 +176,6 @@ class DrivingNode(Node):
                 print("DRIVING")
                 print("Wall: %f", self.check_wall_in_front(msg, self.distance))
                 movement_msg = self.move_forward()
-            
             elif (not self.check_wall_on_right(msg, self.distance)):
                 print("TURNING LEFT")
                 movement_msg = self.turn_left()
