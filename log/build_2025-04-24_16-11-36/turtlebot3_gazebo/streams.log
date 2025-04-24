@@ -1,0 +1,385 @@
+[0.061s] Invoking command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake /home/patrick/ENAE450_tb_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo
+[0.284s] -- The C compiler identification is GNU 11.4.0
+[0.587s] -- The CXX compiler identification is GNU 11.4.0
+[0.605s] -- Detecting C compiler ABI info
+[0.996s] -- Detecting C compiler ABI info - done
+[1.006s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.006s] -- Detecting C compile features
+[1.007s] -- Detecting C compile features - done
+[1.011s] -- Detecting CXX compiler ABI info
+[1.372s] -- Detecting CXX compiler ABI info - done
+[1.393s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.395s] -- Detecting CXX compile features
+[1.401s] -- Detecting CXX compile features - done
+[1.413s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.728s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.093s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.093s] -- Checking for module 'bullet>=2.82'
+[2.094s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[2.094s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[2.095s]   does not match the name of the calling package (gazebo).  This can lead to
+[2.096s]   problems in calling code that expects `find_package` result variables
+[2.096s]   (e.g., `_FOUND`) to follow a certain pattern.
+[2.096s] Call Stack (most recent call first):
+[2.096s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[2.096s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[2.096s]   CMakeLists.txt:23 (find_package)
+[2.097s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.097s] [0m
+[2.192s] --   Found bullet, version 3.05
+[2.622s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.831s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.951s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[3.856s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.983s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[4.017s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.074s] -- Searching for dependencies of ignition-math6
+[4.084s] -- Looking for OGRE...
+[4.085s] -- OGRE_PREFIX_WATCH changed.
+[4.099s] -- Checking for module 'OGRE'
+[4.134s] --   Found OGRE, version 1.9.0
+[4.280s] -- Found Ogre Ghadamon (1.9.0)
+[4.335s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.356s] -- Looking for OGRE_Paging...
+[4.374s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.375s] -- Looking for OGRE_Terrain...
+[4.393s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.394s] -- Looking for OGRE_Property...
+[4.413s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.417s] -- Looking for OGRE_RTShaderSystem...
+[4.464s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.465s] -- Looking for OGRE_Volume...
+[4.465s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[4.466s] -- Looking for OGRE_Overlay...
+[4.515s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[5.059s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.116s] -- Looking for ignition-transport8 -- found version 8.2.1
+[5.122s] -- Searching for dependencies of ignition-transport8
+[5.175s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[5.220s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[5.243s] -- Checking for module 'libzmq >= 4'
+[5.296s] --   Found libzmq , version 4.3.4
+[5.458s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[5.474s] -- Checking for module 'uuid'
+[5.533s] --   Found uuid, version 2.37.2
+[5.953s] -- Found UUID: TRUE  
+[5.969s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.999s] -- Searching for dependencies of ignition-msgs5
+[6.016s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.041s] -- Checking for module 'tinyxml2'
+[6.151s] --   Found tinyxml2, version 9.0.0
+[6.239s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.256s] -- Looking for ignition-common3 -- found version 3.14.0
+[6.259s] -- Searching for dependencies of ignition-common3
+[6.263s] -- Looking for dlfcn.h - found
+[6.266s] -- Looking for libdl - found
+[6.270s] -- Found DL: TRUE  
+[6.327s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[6.333s] -- Searching for <ignition-common3> component [graphics]
+[6.345s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[6.348s] -- Searching for dependencies of ignition-common3-graphics
+[6.350s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.370s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[6.374s] -- Searching for dependencies of ignition-fuel_tools4
+[6.682s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[6.703s] -- Checking for module 'jsoncpp'
+[6.770s] --   Found jsoncpp, version 1.9.5
+[7.294s] -- Found JSONCPP: TRUE  
+[7.354s] -- Checking for module 'libzip'
+[7.399s] --   Found libzip, version 1.7.3
+[7.792s] -- Found ZIP: TRUE  
+[7.793s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.793s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.793s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.837s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[7.847s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.968s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.994s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.072s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.075s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.085s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.211s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[8.306s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[8.623s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.769s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.288s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.396s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.500s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.160s] -- Found Threads: TRUE  
+[10.521s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.646s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[10.819s] -- Configuring done
+[11.445s] -- Generating done
+[11.467s] -- Build files have been written to: /home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo
+[11.503s] Invoked command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake /home/patrick/ENAE450_tb_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo
+[11.505s] Invoking command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake --build /home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo -- -j2 -l2
+[11.679s] [  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[56.245s] [ 16%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[58.465s] [ 16%] Built target turtlebot3_drive
+[59.322s] [ 25%] [32mBuilding CXX object CMakeFiles/traffic_light_plugin.dir/src/traffic_light_plugin.cpp.o[0m
+[95.619s] [ 33%] [32m[1mLinking CXX shared library libtraffic_light_plugin.so[0m
+[98.501s] [ 33%] Built target traffic_light_plugin
+[98.739s] [ 41%] [32mBuilding CXX object CMakeFiles/traffic_bar_plugin.dir/src/traffic_bar_plugin.cpp.o[0m
+[121.882s] [ 50%] [32m[1mLinking CXX shared library libtraffic_bar_plugin.so[0m
+[122.695s] [ 50%] Built target traffic_bar_plugin
+[122.774s] [ 58%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o[0m
+[139.950s] [ 66%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[140.539s] [ 66%] Built target obstacle1
+[140.618s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/src/obstacle2.cpp.o[0m
+[161.857s] [ 83%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[162.430s] [ 83%] Built target obstacle2
+[162.504s] [ 91%] [32mBuilding CXX object CMakeFiles/obstacles.dir/src/obstacles.cpp.o[0m
+[178.060s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[178.615s] [100%] Built target obstacles
+[178.676s] Invoked command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake --build /home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo -- -j2 -l2
+[178.697s] Invoking command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake --install /home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo
+[178.718s] -- Install configuration: ""
+[178.719s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[178.792s] -- Set runtime path of "/home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[178.793s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[178.793s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[178.794s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_robot.launch.py
+[178.794s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_spawn_turtlebot3.launch.py
+[178.794s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/maze_0.launch.py
+[178.795s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[178.795s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[178.798s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[178.799s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[178.799s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[178.800s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/maze_2.launch.py
+[178.803s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[178.803s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/maze_1.launch.py
+[178.804s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_autorace_2020.launch.py
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_2
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_2/model.config
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_2/model.sdf
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[178.810s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[178.814s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[178.816s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[178.818s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[178.819s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[178.820s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[178.822s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[178.822s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[178.823s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[178.827s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[178.830s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[178.830s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[178.831s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[178.832s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[178.834s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[178.835s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[178.836s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[178.837s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[178.839s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[178.840s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[178.841s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[178.843s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[178.845s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[178.847s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[178.849s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[178.851s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[178.852s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[178.854s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[178.854s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[178.856s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[178.860s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[178.864s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[178.867s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[178.871s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[178.875s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[178.876s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[178.878s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_0
+[178.880s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_0/model.config
+[178.881s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_0/model.sdf
+[178.885s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_1
+[178.885s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_1/model.config
+[178.888s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_1/model.sdf
+[178.890s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020
+[178.890s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right
+[178.890s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.config
+[178.894s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.sdf
+[178.895s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials
+[178.895s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures
+[178.896s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures/traffic_right.png
+[178.898s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts
+[178.898s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts/traffic_right.material
+[178.901s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light
+[178.902s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.config
+[178.904s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.sdf
+[178.906s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials
+[178.906s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures
+[178.908s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light.png
+[178.909s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_red.png
+[178.911s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_yellow.png
+[178.913s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_green.png
+[178.915s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts
+[178.916s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts/traffic_light.material
+[178.917s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker
+[178.917s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.config
+[178.919s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.sdf
+[178.921s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials
+[178.922s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures
+[178.923s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures/checker.png
+[178.925s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/checker.png
+[178.928s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts
+[178.928s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts/checker.material
+[178.932s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel
+[178.932s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.config
+[178.934s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.sdf
+[178.937s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials
+[178.937s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures
+[178.937s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures/tunnel.png
+[178.943s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts
+[178.946s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts/tunnel.material
+[178.946s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection
+[178.946s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.config
+[178.948s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.sdf
+[178.949s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials
+[178.950s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures
+[178.950s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures/traffic_intersection.png
+[178.955s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts
+[178.955s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts/traffic_intersection.material
+[178.964s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop
+[178.964s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.config
+[178.969s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.sdf
+[178.970s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials
+[178.970s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures
+[178.970s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures/traffic_stop.png
+[178.976s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts
+[178.976s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts/traffic_stop.material
+[178.978s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry
+[178.980s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.config
+[178.982s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.sdf
+[178.982s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials
+[178.982s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures
+[178.983s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures/traffic_noentry.png
+[178.988s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts
+[178.988s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts/traffic_noentry.material
+[178.989s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction
+[178.990s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.config
+[178.990s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.sdf
+[178.993s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials
+[178.994s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures
+[178.995s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures/traffic_construction.png
+[178.996s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts
+[178.998s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts/traffic_construction.material
+[178.999s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course
+[179.001s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.config
+[179.002s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.sdf
+[179.005s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials
+[179.006s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures
+[179.007s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures/course.png
+[179.007s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts
+[179.009s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts/course.material
+[179.010s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking
+[179.010s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.config
+[179.011s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.sdf
+[179.012s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials
+[179.013s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures
+[179.015s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures/traffic_parking.png
+[179.017s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts
+[179.018s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts/traffic_parking.material
+[179.020s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar
+[179.020s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.config
+[179.022s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.sdf
+[179.023s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials
+[179.023s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures
+[179.024s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures/traffic_bar.png
+[179.026s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts
+[179.029s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts/traffic_bar.material
+[179.030s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left
+[179.031s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.config
+[179.031s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.sdf
+[179.034s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials
+[179.034s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures
+[179.034s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures/traffic_left.png
+[179.037s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts
+[179.039s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts/traffic_is_left.material
+[179.041s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left
+[179.042s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.config
+[179.043s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.sdf
+[179.045s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials
+[179.046s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures
+[179.046s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures/traffic_pl_left.png
+[179.049s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts
+[179.050s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts/traffic_pl_left.material
+[179.052s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[179.053s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[179.055s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[179.063s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[179.063s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[179.064s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[179.064s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[179.080s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors
+[179.081s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.dae
+[179.086s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.jpg
+[179.091s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/lds.stl
+[179.101s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.dae
+[179.208s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.jpg
+[179.209s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[179.211s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases
+[179.211s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_base.stl
+[179.393s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[179.490s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/burger_base.stl
+[179.549s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[179.553s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[179.554s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels
+[179.555s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
+[179.582s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
+[179.596s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[179.599s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[179.601s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam
+[179.601s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model-1_4.sdf
+[179.603s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.config
+[179.604s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.sdf
+[179.607s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[179.607s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[179.610s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[179.610s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_cam.urdf
+[179.612s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[179.614s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[179.615s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[179.618s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[179.618s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[179.619s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[179.620s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[179.623s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[179.625s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[179.625s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[179.627s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze_0.world
+[179.632s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[179.633s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autorace_2020.world
+[179.636s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[179.639s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze_2.world
+[179.640s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze_1.world
+[179.644s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include/
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacles.hpp
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_bar_plugin.hpp
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_light_plugin.hpp
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle2.hpp
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle1.hpp
+[179.645s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[179.647s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[179.649s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[179.651s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[179.652s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[179.654s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[179.655s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[179.657s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[179.659s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[179.665s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[179.665s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[179.668s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[179.671s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[179.671s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[179.681s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[179.681s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[179.684s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[179.685s] -- Installing: /home/patrick/ENAE450_tb_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[179.698s] Invoked command in '/home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/patrick/turtlebot3_ws/install/turtlebot3_teleop:/home/patrick/turtlebot3_ws/install/turtlebot3_example:/home/patrick/turtlebot3_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake --install /home/patrick/ENAE450_tb_ws/build/turtlebot3_gazebo
