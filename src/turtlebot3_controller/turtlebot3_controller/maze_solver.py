@@ -6,6 +6,7 @@ from std_msgs.msg import String
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 import time
+import numpy as np
 class DrivingNode(Node):
 
     def __init__(self):
@@ -119,10 +120,36 @@ class DrivingNode(Node):
         Get the maximum distance in the range of 0 to 720 degrees
         """
         ranges = [0 if x == float('inf') else x for x in msg.ranges[0:720]]
-        print(ranges)
-        max_distance = max(ranges)
+        max_distance = max(ranges[360-180:360+180])
         max_index = ranges.index(max_distance)
         return max_index, max_distance
+    
+    def check_wall_side(self, msg, offset,tolarance):
+        big_number = 1000
+        ranges = [10 if x == float('inf') else x for x in msg.ranges[0:720]]
+        direction = 360
+        left_avg = np.median(ranges[direction-offset:direction])
+        right_avg = np.median(ranges[direction:direction+offset])
+        front_avg = np.median(ranges[direction-int(offset/2):direction+int(offset/2)])
+        closest = min(left_avg, right_avg, front_avg)
+        print("Left: %f, Right: %f, Front: %f" % (left_avg, right_avg, front_avg))
+
+        if (closest < tolarance):
+            if closest == left_avg:
+                return "WALL ON LEFT"
+            elif closest == right_avg:
+                return "WALL ON RIGHT"
+            else:
+                return "WALL IN FRONT"
+
+        else:
+            return "NO WALL"
+        
+
+
+
+
+        
     """
     try:
             if self.following_right:
@@ -160,30 +187,45 @@ class DrivingNode(Node):
     def listener_callback(self,msg):
         movement_msg = Twist()
         direction, distance = self.get_max_direction(msg)
-        offset = 6
+        offset = 10
         delay = 1
+
+        wall_offset = 120
+
+        wall_side = self.check_wall_side(msg,  wall_offset, 0.3)
+        print("Wall side: %s" % wall_side)
+
+        if wall_side != "NO WALL":
+            delay = 500
+
         if(self.servo):
             print("STOPPING")
             movement_msg = self.stop()
             self.servo = False
         else:
-            if(direction in range(360-offset, 360+offset)):
+            if direction in range(360-offset, 360+offset) and wall_side == "NO WALL":
                 print("DRIVING")
                 movement_msg = self.move_forward()
-            elif(direction-360>0):
+            elif wall_side == "WALL IN FRONT":
+                print("Moving Backward")
+                movement_msg = self.move_backward()
+                delay *= 4
+                
+            elif (direction - 360) > 0 or wall_side == "WALL ON RIGHT":
                 print("TURNING LEFT")
                 movement_msg = self.turn_left()
                 self.servo = True
-
-            elif(direction-360<0):
+            elif (direction - 360) < 0 or wall_side == "WALL ON LEFT":
                 print("TURNING RIGHT")
                 movement_msg = self.turn_right()
                 self.servo = True
             else:
                 print("STOPPING")
                 movement_msg = self.stop()
-        print("Direction: %d" % direction)
-        print("Distance: %f" % distance)
+            
+        if wall_side != "NO WALL":
+            movement_msg.linear.x = -self.speed
+
         self.publisher.publish(movement_msg)
         time.sleep(delay/1000)
         
