@@ -15,4 +15,5 @@ test/test_flake8.py
 test/test_pep257.py
 turtlebot3_controller/__init__.py
 turtlebot3_controller/drive_forward.py
+turtlebot3_controller/maze_solver.py
 turtlebot3_controller/wall_following.py
