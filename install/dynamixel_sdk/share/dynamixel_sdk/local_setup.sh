@@ -1,1 +1,0 @@
-/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.sh

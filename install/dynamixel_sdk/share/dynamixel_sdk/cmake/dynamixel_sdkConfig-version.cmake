@@ -1,1 +1,0 @@
-/home/patrick/turtlebot3_ENAE450_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig-version.cmake

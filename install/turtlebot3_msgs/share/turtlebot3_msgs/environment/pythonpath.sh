@@ -1,1 +1,0 @@
-/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_msgs/ament_cmake_environment_hooks/pythonpath.sh

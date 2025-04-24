@@ -1,1 +1,0 @@
-/home/patrick/turtlebot3_ENAE450_ws/build/turtlebot3_node/ament_cmake_core/turtlebot3_nodeConfig.cmake

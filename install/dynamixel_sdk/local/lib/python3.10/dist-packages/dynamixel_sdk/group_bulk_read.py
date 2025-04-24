@@ -1,1 +1,0 @@
-/home/patrick/turtlebot3_ENAE450_ws/src/DynamixelSDK/ros/dynamixel_sdk/src/dynamixel_sdk/group_bulk_read.py
