@@ -11,6 +11,8 @@ class DrivingNode(Node):
 
     def __init__(self):
         super().__init__('driving_node')
+        self.turn_speed = 1.0
+        self.movement_speed = 0.25
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         self.subscriber = self.create_subscription(LaserScan,'scan',self.listener_callback,10)
         
@@ -35,23 +37,32 @@ class DrivingNode(Node):
         rmedian = self.getMean(rightRange)
 
         movement_msg = Twist()
-        if (median > 1000 or median < 0.4):
-            print("NOT DRIVING")
-            print(median)
+        if (fmedian > 0.4):
+            print("MOVING FORWARD")
+            print(fmedian)
+            movement_msg.linear.x = self.movement_speed
+            movement_msg.linear.y = 0.0
+            movement_msg.linear.z = 0.0
+            movement_msg.angular.x = 0.0
+            movement_msg.angular.y = 0.0
+            movement_msg.angular.z = 0.0
+        elif (rmedian > 0.4):
+            print("TURNING RIGHT")
+            print(rmedian)
             movement_msg.linear.x = 0.0
             movement_msg.linear.y = 0.0
             movement_msg.linear.z = 0.0
             movement_msg.angular.x = 0.0
             movement_msg.angular.y = 0.0
-            movement_msg.angular.z = 0.0
+            movement_msg.angular.z = -self.turn_speed
         else:
-            print("DRIVING")
-            movement_msg.linear.x = 0.1
+            print("TURNING LEFT")
+            movement_msg.linear.x = 0.0
             movement_msg.linear.y = 0.0
             movement_msg.linear.z = 0.0
             movement_msg.angular.x = 0.0
             movement_msg.angular.y = 0.0
-            movement_msg.angular.z = 0.0
+            movement_msg.angular.z = self.turn_speed
         self.publisher.publish(movement_msg)
 
 def main(args=None):
