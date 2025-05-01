@@ -21,6 +21,10 @@ setup(
     entry_points={
         'console_scripts': [
             'drive_forward = turtlebot3_controller.drive_forward:main',
+            'maze_solver = turtlebot3_controller.maze_solver:main',
+            'wall_following = turtlebot3_controller.wall_following:main',
+            'right_turn_algo = turtlebot3_controller.right_turn_algo:main',
+            
         ],
     },
 )
