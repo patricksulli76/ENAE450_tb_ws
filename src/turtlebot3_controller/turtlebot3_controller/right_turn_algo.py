@@ -28,7 +28,7 @@ class DrivingNode(Node):
         movement_msg.angular.z = -self.movement_speed
         self.publisher.publish(movement_msg)
         time.sleep(.675)
-        movement_msg.angular.z = 0
+        movement_msg.angular.z = 0.0
         self.publisher.publish(movement_msg)
 
     def turnLeft(self):
@@ -41,7 +41,7 @@ class DrivingNode(Node):
         movement_msg.angular.z = self.movement_speed
         self.publisher.publish(movement_msg)
         time.sleep(.675)
-        movement_msg.angular.z = 0
+        movement_msg.angular.z = 0.0
         self.publisher.publish(movement_msg)
 
     def getMean(self,arr):
