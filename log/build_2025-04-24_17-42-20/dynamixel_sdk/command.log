@@ -1,0 +1,1 @@
+Invoking command in '/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller:/opt/ros/humble /usr/bin/cmake --build /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk -- -j8 -l8

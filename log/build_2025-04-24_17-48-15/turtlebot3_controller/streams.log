@@ -1,0 +1,44 @@
+[0.677s] Invoking command in '/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_controller': PYTHONPATH=/home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_controller build --build-base /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build install --record /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/install.log --single-version-externally-managed install_data
+[0.970s] running egg_info
+[0.970s] creating ../../build/turtlebot3_controller/turtlebot3_controller.egg-info
+[0.971s] writing ../../build/turtlebot3_controller/turtlebot3_controller.egg-info/PKG-INFO
+[0.973s] writing dependency_links to ../../build/turtlebot3_controller/turtlebot3_controller.egg-info/dependency_links.txt
+[0.974s] writing entry points to ../../build/turtlebot3_controller/turtlebot3_controller.egg-info/entry_points.txt
+[0.976s] writing requirements to ../../build/turtlebot3_controller/turtlebot3_controller.egg-info/requires.txt
+[0.976s] writing top-level names to ../../build/turtlebot3_controller/turtlebot3_controller.egg-info/top_level.txt
+[0.979s] writing manifest file '../../build/turtlebot3_controller/turtlebot3_controller.egg-info/SOURCES.txt'
+[0.980s] reading manifest file '../../build/turtlebot3_controller/turtlebot3_controller.egg-info/SOURCES.txt'
+[0.981s] adding license file 'LICENSE'
+[0.983s] writing manifest file '../../build/turtlebot3_controller/turtlebot3_controller.egg-info/SOURCES.txt'
+[0.984s] running build
+[0.984s] running build_py
+[0.985s] creating /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build
+[0.987s] creating /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib
+[0.987s] creating /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller
+[0.988s] copying turtlebot3_controller/maze_solver.py -> /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller
+[0.989s] copying turtlebot3_controller/drive_forward.py -> /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller
+[0.990s] copying turtlebot3_controller/__init__.py -> /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller
+[0.993s] copying turtlebot3_controller/wall_following.py -> /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller
+[0.999s] running install
+[1.004s] running install_lib
+[1.004s] creating /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller
+[1.004s] copying /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller/maze_solver.py -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller
+[1.004s] copying /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller/drive_forward.py -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller
+[1.004s] copying /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller/__init__.py -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller
+[1.004s] copying /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build/lib/turtlebot3_controller/wall_following.py -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller
+[1.004s] byte-compiling /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller/maze_solver.py to maze_solver.cpython-310.pyc
+[1.008s] byte-compiling /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller/drive_forward.py to drive_forward.cpython-310.pyc
+[1.012s] byte-compiling /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller/__init__.py to __init__.cpython-310.pyc
+[1.012s] byte-compiling /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller/wall_following.py to wall_following.cpython-310.pyc
+[1.012s] running install_data
+[1.012s] creating /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/share/ament_index
+[1.012s] creating /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/share/ament_index/resource_index
+[1.012s] creating /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/share/ament_index/resource_index/packages
+[1.012s] copying resource/turtlebot3_controller -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/share/ament_index/resource_index/packages
+[1.012s] copying package.xml -> /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/share/turtlebot3_controller
+[1.012s] running install_egg_info
+[1.026s] Copying ../../build/turtlebot3_controller/turtlebot3_controller.egg-info to /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages/turtlebot3_controller-0.0.0-py3.10.egg-info
+[1.028s] running install_scripts
+[1.067s] Installing drive_forward script to /home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/turtlebot3_controller
+[1.067s] writing list of installed files to '/home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/install.log'
+[1.103s] Invoked command in '/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_controller' returned '0': PYTHONPATH=/home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mikolaj/ENAE450_tb_ws/install/turtlebot3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_controller build --build-base /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/build install --record /home/mikolaj/ENAE450_tb_ws/build/turtlebot3_controller/install.log --single-version-externally-managed install_data

@@ -19,13 +19,13 @@ class DrivingNode(Node):
         self.y = 0
         self.orientation = [0,1]
 
-        self.translation_speed = 0.1
-        self.rotation_speed = 0.1
+        self.translation_speed = 0.26
+        self.rotation_speed = -0.15
 
         self.last_laser_scan = None
 
         self.warning_distance = 0.4
-        self.stop_distance = 0.3
+        self.stop_distance = 0.4
 
     def max_distances(self, msg):
         """
@@ -35,7 +35,7 @@ class DrivingNode(Node):
         Returns:
             A list of tuples (distance, index) sorted by distance in descending order
         """
-        ranges = msg.ranges[80*2:280*2]  # Get the range data from 90° to 270°
+        ranges = msg.ranges[180:540]  # Get the range data from 90° to 270°
         # Create index-value pairs, treating inf as a large number
         valid_pairs = []
         for i, dist in enumerate(ranges):
@@ -43,9 +43,9 @@ class DrivingNode(Node):
                 continue  # Skip NaN values
             elif dist == float('inf'):
                 # Treat infinity as a large number (e.g., 100 meters)
-                valid_pairs.append((i+80*2, 100.0))
+                valid_pairs.append((i+180, 100.0))
             else:
-                valid_pairs.append((i+80*2, dist))
+                valid_pairs.append((i+180, dist))
         # Sort by distance (descending)
         sorted_pairs = sorted(valid_pairs, key=lambda x: x[1], reverse=True)
         return sorted_pairs
@@ -67,10 +67,10 @@ class DrivingNode(Node):
 
         # Get the index and distance of the furthest point
         max_index, max_dist = max_distance
-        center_index = 180*2 # The center of our scan range (straight ahead)
+        center_index = 360 # The center of our scan range (straight ahead)
 
         # Define angle threshold for considering a path "straight ahead"
-        angle_threshold = 1 # degrees
+        angle_threshold = 10# degrees
 
         # Calculate the angular difference from center
         angle_diff = abs(max_index - center_index)
@@ -109,10 +109,10 @@ class DrivingNode(Node):
         # Get the distance at the front (index 0)
         front_distance = msg.ranges[0]
         
-        for i in range(135*2, 225*2):
+        for i in range(270, 550):
                 r = msg.ranges[i]
                 # Check if this is a valid reading and closer than warning distance
-                if r < self.stop_distance:
+                if r> 0 and r < self.stop_distance:
                     print(f"Obstacle found at index {i} with distance {r}")
                     obstacle_found = True
                     return True
@@ -137,16 +137,15 @@ class DrivingNode(Node):
         for idx, dist in max_distances:
 
             # Define the range to check (+/- 45 degrees)
-            start_idx = max(idx-40*2,0)
-            end_idx = min(idx+40*2, len(msg.ranges)-1)
+            start_idx = max(idx-80,0)
+            end_idx = min(idx+80, len(msg.ranges)-1)
             
             # Check if there are any obstacles closer than warning distance
             obstacle_found = False
             for i in range(int(start_idx), int(end_idx) + 1):
                 r = msg.ranges[i]
                 # Check if this is a valid reading and closer than warning distance
-                if r < self.warning_distance:
-                    print(f"Obstacle found at index {i} with distance {r}")
+                if r>0 and r < self.warning_distance:
                     obstacle_found = True
                     break
 
@@ -182,22 +181,29 @@ class DrivingNode(Node):
     def listener_callback(self,msg):
         movement_msg = Twist()
 
-        msg.ranges = [100.0 if np.isinf(r) else r for r in msg.ranges]
+        msg.ranges = [-1.0 if np.isinf(r) else r for r in msg.ranges]
+        
 
-        #msg.ranges = self.sim_to_real(msg.ranges)
-
-        print(len(msg.ranges))
 
         # Get the maximum distances and their indices
         max_distances = self.max_distances(msg)
 
         viable_max_distance = self.check_viable_max(max_distances, msg)  
 
-        print("Direction: ", viable_max_distance)
-        print("Max distance: ", max_distances[0])
+        if viable_max_distance is None:
+            movement_msg = self.follow_max(msg, movement_msg, max_distances[0])
+            print("Max distance: ", max_distances[0])
+            
+        else:
+            movement_msg = self.follow_max(msg, movement_msg, viable_max_distance)
+            print("Direction: ", viable_max_distance)
+            
+            
 
 
-        movement_msg = self.follow_max(msg, movement_msg, viable_max_distance)
+        #print("Direction: ", viable_max_distance)
+        #print("Max distance: ", max_distances[0])
+
         # Check if the robot is too close to an obstacle
         
 

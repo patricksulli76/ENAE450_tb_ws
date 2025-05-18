@@ -185,6 +185,7 @@ class DrivingNode(Node):
             print("Error in listener_callback
     """
     def listener_callback(self,msg):
+        print("Length of ranges: %d" % len(msg.ranges))
         movement_msg = Twist()
         direction, distance = self.get_max_direction(msg)
         offset = 10

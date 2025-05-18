@@ -1,8 +1,8 @@
-# Install script for directory: /home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk
+# Install script for directory: /home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/patrick/ENAE450_tb_ws/install/dynamixel_sdk")
+  set(CMAKE_INSTALL_PREFIX "/home/mikolaj/ENAE450_tb_ws/install/dynamixel_sdk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/" TYPE DIRECTORY FILES "/home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/" TYPE DIRECTORY FILES "/home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/libdynamixel_sdk.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/libdynamixel_sdk.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -66,26 +66,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info" TYPE DIRECTORY FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info" TYPE DIRECTORY FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk" TYPE DIRECTORY FILES "/home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/src/dynamixel_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk" TYPE DIRECTORY FILES "/home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/src/dynamixel_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/patrick/ENAE450_tb_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk"
+        "/home/mikolaj/ENAE450_tb_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk"
       )
 endif()
 
@@ -94,15 +94,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/library_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/library_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -110,7 +110,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -118,50 +118,50 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/packages/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/packages/dynamixel_sdk")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES
-    "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig.cmake"
-    "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig-version.cmake"
+    "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig.cmake"
+    "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -172,5 +172,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

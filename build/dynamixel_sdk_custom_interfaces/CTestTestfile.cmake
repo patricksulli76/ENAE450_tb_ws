@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
-# Build directory: /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk_custom_interfaces
+# Source directory: /home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
+# Build directory: /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk_custom_interfaces
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

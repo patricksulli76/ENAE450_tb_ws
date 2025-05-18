@@ -1,11 +1,11 @@
 {
   "package_name": "turtlebot3_msgs",
   "non_idl_tuples": [
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:msg/SensorState.msg",
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:msg/Sound.msg",
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:srv/Sound.srv",
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:srv/Dqn.srv",
-    "/home/patrick/ENAE450_tb_ws/src/turtlebot3_msgs:action/Patrol.action"
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:msg/Sound.msg",
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:srv/Sound.srv",
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/home/mikolaj/ENAE450_tb_ws/src/turtlebot3_msgs:action/Patrol.action"
   ]
 }

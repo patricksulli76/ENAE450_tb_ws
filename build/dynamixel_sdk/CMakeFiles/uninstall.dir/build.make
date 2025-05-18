@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk
+CMAKE_SOURCE_DIR = /home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk
+CMAKE_BINARY_DIR = /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/patrick/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk /home/patrick/ENAE450_tb_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/mikolaj/ENAE450_tb_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk /home/mikolaj/ENAE450_tb_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
