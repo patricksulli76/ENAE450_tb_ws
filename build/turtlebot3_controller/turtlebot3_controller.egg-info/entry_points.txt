@@ -1,3 +1,0 @@
-[console_scripts]
-drive_forward = turtlebot3_controller.drive_forward:main
-
